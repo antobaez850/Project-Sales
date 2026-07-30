@@ -1,0 +1,150 @@
+<svg viewBox="0 0 1180 640" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="dot" markerWidth="8" markerHeight="8" refX="4" refY="4">
+      <circle cx="4" cy="4" r="3" fill="#2b6777" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1180" height="640" fill="#f4f7f7" />
+
+  <!-- Title -->
+  <text x="40" y="50" font-size="28" font-weight="700" fill="#1f2d3d">Modelo de Datos — Ventas</text>
+  <text x="40" y="72" font-size="13" fill="#6b7c93">Diagrama Entidad Relación</text>
+
+  <!-- ============ TABLE: users ============ -->
+  <g>
+    <rect x="60" y="110" width="330" height="150" rx="6" fill="#ffffff" stroke="#c7d3d9" stroke-width="1.5"/>
+    <rect x="60" y="110" width="330" height="34" rx="6" fill="#2b6777"/>
+    <rect x="60" y="126" width="330" height="18" fill="#2b6777"/>
+    <text x="225" y="132" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">users</text>
+
+    <text x="76" y="164" font-size="13" font-style="italic" fill="#1f2d3d">id</text>
+    <text x="330" y="164" font-size="12" fill="#8a97a3">pk</text>
+    <line x1="60" y1="172" x2="390" y2="172" stroke="#e3e9ec"/>
+
+    <text x="76" y="192" font-size="13" fill="#1f2d3d">name</text>
+    <text x="323" y="192" font-size="12" fill="#8a97a3">nn</text>
+    <line x1="60" y1="200" x2="390" y2="200" stroke="#e3e9ec"/>
+
+    <text x="76" y="220" font-size="13" fill="#1f2d3d">last_name</text>
+    <text x="323" y="220" font-size="12" fill="#8a97a3">nn</text>
+    <line x1="60" y1="228" x2="390" y2="228" stroke="#e3e9ec"/>
+
+    <text x="76" y="248" font-size="13" fill="#1f2d3d">country</text>
+    <text x="323" y="248" font-size="12" fill="#8a97a3">nn</text>
+  </g>
+
+  <!-- ============ TABLE: sales_orders ============ -->
+  <g>
+    <rect x="740" y="90" width="380" height="245" rx="6" fill="#ffffff" stroke="#c7d3d9" stroke-width="1.5"/>
+    <rect x="740" y="90" width="380" height="34" rx="6" fill="#c1541f"/>
+    <rect x="740" y="106" width="380" height="18" fill="#c1541f"/>
+    <text x="930" y="112" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">sales_orders</text>
+
+    <text x="756" y="144" font-size="13" font-style="italic" fill="#1f2d3d">id</text>
+    <text x="1000" y="144" font-size="12" fill="#8a97a3">pk</text>
+    <line x1="740" y1="152" x2="1120" y2="152" stroke="#e3e9ec"/>
+
+    <text x="756" y="172" font-size="13" fill="#1f2d3d">user_id</text>
+    <text x="900" y="172" font-size="12" fill="#8a97a3">fk (users: id) nn</text>
+    <line x1="740" y1="180" x2="1120" y2="180" stroke="#e3e9ec"/>
+
+    <text x="756" y="200" font-size="13" fill="#1f2d3d">date</text>
+    <text x="1000" y="200" font-size="12" fill="#8a97a3">nn</text>
+    <line x1="740" y1="208" x2="1120" y2="208" stroke="#e3e9ec"/>
+
+    <text x="756" y="228" font-size="13" fill="#1f2d3d">amount</text>
+    <text x="1000" y="228" font-size="12" fill="#8a97a3">nn</text>
+    <line x1="740" y1="236" x2="1120" y2="236" stroke="#e3e9ec"/>
+
+    <text x="756" y="256" font-size="13" fill="#1f2d3d">currency</text>
+    <text x="1000" y="256" font-size="12" fill="#8a97a3">nn</text>
+    <line x1="740" y1="264" x2="1120" y2="264" stroke="#e3e9ec"/>
+
+    <text x="756" y="284" font-size="13" fill="#1f2d3d">plan_id</text>
+    <text x="870" y="284" font-size="12" fill="#8a97a3">fk (payment_plans: id) nn</text>
+    <line x1="740" y1="292" x2="1120" y2="292" stroke="#e3e9ec"/>
+
+    <text x="756" y="312" font-size="13" fill="#1f2d3d">product_id</text>
+    <text x="890" y="312" font-size="12" fill="#8a97a3">fk (products: id) nn</text>
+  </g>
+
+  <!-- ============ TABLE: payment_plans ============ -->
+  <g>
+    <rect x="60" y="380" width="380" height="230" rx="6" fill="#ffffff" stroke="#c7d3d9" stroke-width="1.5"/>
+    <rect x="60" y="380" width="380" height="34" rx="6" fill="#3d5a80"/>
+    <rect x="60" y="396" width="380" height="18" fill="#3d5a80"/>
+    <text x="250" y="402" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">payment_plans</text>
+
+    <text x="76" y="434" font-size="13" font-style="italic" fill="#1f2d3d">id</text>
+    <text x="320" y="434" font-size="12" fill="#8a97a3">pk</text>
+    <line x1="60" y1="442" x2="440" y2="442" stroke="#e3e9ec"/>
+
+    <text x="76" y="462" font-size="13" fill="#1f2d3d">brand</text>
+    <text x="313" y="462" font-size="12" fill="#8a97a3">nn</text>
+    <line x1="60" y1="470" x2="440" y2="470" stroke="#e3e9ec"/>
+
+    <text x="76" y="490" font-size="13" fill="#1f2d3d">last4</text>
+    <text x="313" y="490" font-size="12" fill="#8a97a3">nn</text>
+    <line x1="60" y1="498" x2="440" y2="498" stroke="#e3e9ec"/>
+
+    <text x="76" y="518" font-size="13" fill="#1f2d3d">installments</text>
+    <text x="313" y="518" font-size="12" fill="#8a97a3">nn</text>
+    <line x1="60" y1="526" x2="440" y2="526" stroke="#e3e9ec"/>
+
+    <text x="76" y="546" font-size="13" fill="#1f2d3d">installment_amount</text>
+    <text x="313" y="546" font-size="12" fill="#8a97a3">nn</text>
+    <line x1="60" y1="554" x2="440" y2="554" stroke="#e3e9ec"/>
+
+    <text x="76" y="574" font-size="13" fill="#1f2d3d">order_id</text>
+    <text x="230" y="574" font-size="12" fill="#8a97a3">fk (sales_orders: id) nn</text>
+  </g>
+
+  <!-- ============ TABLE: products ============ -->
+  <g>
+    <rect x="600" y="420" width="330" height="150" rx="6" fill="#ffffff" stroke="#c7d3d9" stroke-width="1.5"/>
+    <rect x="600" y="420" width="330" height="34" rx="6" fill="#6b4c9a"/>
+    <rect x="600" y="436" width="330" height="18" fill="#6b4c9a"/>
+    <text x="765" y="442" text-anchor="middle" font-size="15" font-weight="700" fill="#ffffff">products</text>
+
+    <text x="616" y="474" font-size="13" font-style="italic" fill="#1f2d3d">id</text>
+    <text x="870" y="474" font-size="12" fill="#8a97a3">pk</text>
+    <line x1="600" y1="482" x2="930" y2="482" stroke="#e3e9ec"/>
+
+    <text x="616" y="502" font-size="13" fill="#1f2d3d">type</text>
+    <text x="863" y="502" font-size="12" fill="#8a97a3">nn</text>
+    <line x1="600" y1="510" x2="930" y2="510" stroke="#e3e9ec"/>
+
+    <text x="616" y="530" font-size="13" fill="#1f2d3d">name</text>
+    <text x="863" y="530" font-size="12" fill="#8a97a3">nn</text>
+    <line x1="600" y1="538" x2="930" y2="538" stroke="#e3e9ec"/>
+
+    <text x="616" y="558" font-size="13" fill="#1f2d3d">vertical</text>
+    <text x="863" y="558" font-size="12" fill="#8a97a3">nn</text>
+  </g>
+
+  <!-- ============ RELATIONSHIPS ============ -->
+  <!-- users.id -> sales_orders.user_id (1 to *) -->
+  <path d="M 390 170 C 550 170, 600 172, 740 172" fill="none" stroke="#2b6777" stroke-width="1.5"/>
+  <text x="400" y="164" font-size="13" font-weight="700" fill="#2b6777">1</text>
+  <text x="718" y="166" font-size="13" font-weight="700" fill="#2b6777">*</text>
+
+  <!-- products.id -> sales_orders.product_id (1 to *) -->
+  <path d="M 600 460 C 500 460, 460 312, 740 312" fill="none" stroke="#6b4c9a" stroke-width="1.5"/>
+  <text x="612" y="452" font-size="13" font-weight="700" fill="#6b4c9a">1</text>
+  <text x="718" y="306" font-size="13" font-weight="700" fill="#6b4c9a">*</text>
+
+  <!-- sales_orders.plan_id -> payment_plans.id (1 to 1) -->
+  <path d="M 740 284 C 550 284, 500 434, 440 434" fill="none" stroke="#3d5a80" stroke-width="1.5"/>
+  <text x="700" y="278" font-size="13" font-weight="700" fill="#3d5a80">1</text>
+  <text x="450" y="428" font-size="13" font-weight="700" fill="#3d5a80">1</text>
+
+  <!-- payment_plans.order_id -> sales_orders.id (1 to 1) -->
+  <path d="M 440 574 C 600 574, 660 144, 740 144" fill="none" stroke="#c1541f" stroke-width="1.5"/>
+  <text x="452" y="568" font-size="13" font-weight="700" fill="#c1541f">1</text>
+  <text x="718" y="138" font-size="13" font-weight="700" fill="#c1541f">1</text>
+
+  <!-- Legend -->
+  <text x="40" y="620" font-size="11" fill="#8a97a3">pk: primary key · fk: foreign key · nn: not null</text>
+</svg>
