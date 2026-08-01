@@ -41,3 +41,28 @@ Para eso se desarrollo un dashboard con los siguientes indicadores y dimensiones
 
 • Crear indicadores clave de negocio (KPIs) utilizando DAX.
 
+<hr/>
+
+## 🛠️ Tecnologías utilizadas
+
+<table>
+  <tr>
+    <th>Tecnología</th>
+    <th>Detalle</th>
+  </tr>
+  <tr>
+    <td>Bigquery</td>
+    <td>Importar archivos y realizar querys</td>
+  </tr>
+  <tr>
+    <td>Power BI</td>
+    <td>Dashboard y visualización</td>
+  </tr>
+</table>
+
+<hr/>
+
+## 📈 Vista Previa
+[Ver documento PDF](./documento.pdf)
+
+
