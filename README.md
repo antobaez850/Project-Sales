@@ -63,6 +63,6 @@ Para eso se desarrollo un dashboard con los siguientes indicadores y dimensiones
 <hr/>
 
 ## 📈 Vista Previa
-[Ver Dashboard en PDF](./Sales%20pdf.pdf)
+[Ver Dashboard en PDF](./Dashboard/Sales%20pdf.pdf)
 
 
